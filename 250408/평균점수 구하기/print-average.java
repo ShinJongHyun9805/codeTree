@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -10,7 +11,9 @@ public class Main {
         long count = Arrays.stream(str.split(" ")).mapToDouble(Double::valueOf).count();
 
         double sum = Arrays.stream(str.split(" ")).mapToDouble(Double::valueOf).sum();
-        System.out.println(Math.round((sum / count) * 10.0) / 10.0);
+
+        DecimalFormat df = new DecimalFormat("0.0");
+        System.out.println(df.format(sum /count));
 
     }
 }
