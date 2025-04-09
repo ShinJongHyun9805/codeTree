@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -21,6 +22,7 @@ public class Main {
             count++;
         }
 
-        System.out.println(sum + " " + (double) sum2 / count);
+        DecimalFormat df = new DecimalFormat("0.0");
+        System.out.println(sum + " " + df.format((double) sum2 / count));
     }
 }
