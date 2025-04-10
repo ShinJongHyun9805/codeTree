@@ -7,15 +7,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
 
-        int[] arr = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(Integer::parseInt)
-                .toArray();
-
         int[] n = new int[10];
-        n[0] = arr[0];
+        n[0] = sc.nextInt();
         sb.append(n[0]).append(" ");
 
-        n[1] = arr[1];
+        n[1] = sc.nextInt();
         sb.append(n[1]).append(" ");
 
         for (int i = 2; i < n.length; i++) {
