@@ -18,7 +18,7 @@ public class Main {
         }
 
         int sum = 0;
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < B; i++) {
             int cnt = 0;
             for (int j = 0; j < list.size(); j++) {
                 if (i == list.get(j)) {
